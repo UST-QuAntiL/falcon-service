@@ -1,7 +1,7 @@
 # Falcon LLM ggml REST API wrapper
 
 This repository contains a REST API wrapper for [Falcon](https://huggingface.co/tiiuae/falcon-7b) models in the [ggml](https://github.com/ggerganov/ggml) format.
-It uses the [ggllm.cpp](https://github.com/cmp-nct/ggllm.cpp) repository for executing the models.
+It uses [ggllm.cpp](https://github.com/cmp-nct/ggllm.cpp) to execute the models.
 
 ## Model conversion / quantization
 
