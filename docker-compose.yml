@@ -1,0 +1,10 @@
+services:
+  ggllm:
+    build: .
+    image: ggllm
+    environment:
+      MODEL_FILE: ${MODEL_FILE}
+    ports:
+      - 8000:8000
+    volumes:
+      - "${MODEL_FOLDER}:/models"
