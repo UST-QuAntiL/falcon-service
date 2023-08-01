@@ -17,6 +17,10 @@ WORKDIR build
 RUN cmake -DLLAMA_CUBLAS=0 ..
 RUN cmake --build . --config Release
 
+# install dependencies for convert script
+
+RUN python3 -m pip install torch==2.0.1 numpy==1.25.1 transformers==4.31.0
+
 # install REST API server
 
 ADD . /app
